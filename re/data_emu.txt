@@ -1,0 +1,442 @@
+-----------------auto generated sim file----------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity data_emu is
+	port(
+	  P0_RXC      : OUT STD_LOGIC:='0';   --8212 receive clock, 125MHz, not continous
+	  P0_RXDV     : OUT STD_LOGIC:='0';   --DATA VALID
+	  P0_RGMII      : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+
+	  P1_RXC      : OUT STD_LOGIC:='0';   --8212 receive clock, 125MHz, not continous
+	  P1_RXDV     : OUT STD_LOGIC:='0';   --DATA VALID
+	  P1_RGMII      : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+	  );
+
+end entity;
+
+
+architecture behav of data_emu is
+signal x: std_logic_vector(11 downto 0):=(others => '0');
+signal y: std_logic_vector(11 downto 0):=(others => '0');
+
+signal test_rgb_cnt: std_logic_vector(1 downto 0):=(others => '0');
+signal test_rgb_val: std_logic_vector(7 downto 0):=(others => '0');
+signal frame_row_buff: std_logic_vector(15 downto 0):=(others => '0');
+signal frame_count: std_logic_vector(7 downto 0):=(others => '0');
+signal test_crc: std_logic_vector(7 downto 0):=(others => '0');
+signal test_col: std_logic_vector(7 downto 0):=(others => '0');
+signal test_row: std_logic_vector(7 downto 0):=(others => '0');
+signal phy_clk: std_logic:='0';
+signal P0_RXD      : STD_LOGIC_VECTOR(7 DOWNTO 0);
+
+begin
+
+    P0_RXC <= not phy_clk;
+	  P1_RXC  <= '0';
+    phy_clk <= not phy_clk after 4 ns;
+
+process(phy_clk)
+begin
+if rising_edge(phy_clk) then
+   P0_RGMII <= P0_RXD(7 downto 4);
+elsif falling_edge(phy_clk) then
+   P0_RGMII <= P0_RXD(3 downto 0);
+end if;
+
+end process;
+
+
+process(phy_clk)
+begin
+if rising_edge(phy_clk) then
+
+      if x >= 1514 then
+	  x <= (others => '0');
+	  if y <= 700 then  --767
+	      y <= y + '1';
+	  else
+	      y <= (others => '0');
+	  end if;
+      else
+	  x <= x + '1';
+      end if;
+
+
+   if y < 75 then
+	 P0_RXDV <= '0';
+	 P0_RXD <= X"00";
+  elsif y = 75  then
+
+	if x <= 17 then
+				P0_RXDV <= '0';
+		P0_RXD <= X"00";
+		test_crc <= X"00";
+		elsif x > 17 and x <= 24 then
+			P0_RXDV <= '1';
+		P0_RXD <= X"55";
+		elsif x = 25 then P0_RXD <= X"D5";
+		elsif x = 26 then P0_RXD <= X"11";
+		elsif x = 27 then P0_RXD <= X"22";
+		elsif x = 28 then P0_RXD <= X"33";
+		elsif x = 29 then P0_RXD <= X"44";
+		elsif x = 30 then P0_RXD <= X"55";
+		elsif x = 31 then P0_RXD <= X"66";
+		elsif x = 32 then P0_RXD <= X"11";
+		elsif x = 33 then P0_RXD <= X"22";
+		elsif x = 34 then P0_RXD <= X"33";
+		elsif x = 35 then P0_RXD <= X"44";
+		elsif x = 36 then P0_RXD <= X"55";
+		elsif x = 37 then P0_RXD <= X"66";
+		elsif x = 38 then P0_RXD <= X"FF";     --FRM TYPE
+			elsif x = 39 then P0_RXD <= X"00";     ---SERIAL NO
+			elsif x = 40 then P0_RXD <= X"00";
+elsif x =41 then P0_RXD <= X"00";     --SUBFRAME NO
+       elsif x = 42 then P0_RXD <= X"00";
+       elsif x = 43 then P0_RXD <= X"00";
+       elsif x = 44 then P0_RXD <= X"00";
+       elsif x = 45 then P0_RXD <= X"00";
+       elsif x = 46 then P0_RXD <= X"00";
+       elsif x = 47 then P0_RXD <= X"40";
+       elsif x = 48 then P0_RXD <= X"02";
+       elsif x = 49 then P0_RXD <= X"00";
+       elsif x = 50 then P0_RXD <= X"00";
+       elsif x = 51 then P0_RXD <= X"00";
+    elsif x>51 and x<41+1280 then P0_RXD <= X"00";
+    else
+       P0_RXDV <= '0';
+end if;
+
+       --control area
+#-CARDAREA-#
+
+
+
+  --Basic routing table
+#-BASICROUTE-#
+
+  --HDR(10bit)
+#-GAMATABLE_HDR10-#
+
+
+  --HDR(8bit)
+#-GAMATABLE_HDR8-#
+
+
+  --HLG(10bit)
+#-GAMATABLE_HLG10-#
+
+
+  --HLG(8bit)
+#-GAMATABLE_HLG8-#
+
+
+  --gamma table(10bit)
+#-GAMA10TABLE-#
+
+  --gamma table(8bit)
+#-GAMATABLE-#
+
+  --1b frame parameters
+#-EEPROM_PARAM-#
+
+   elsif y = #-SCANSCHEDULE_Y_INDEX-# then
+       if x <= 17 then
+	 P0_RXDV <= '0';
+	 P0_RXD <= X"00";
+	 test_crc <= X"00";
+       elsif x > 17 and x <= 24 then
+	 P0_RXDV <= '1';
+	 P0_RXD <= X"55";
+       elsif x = 25 then P0_RXD <= X"D5";
+       elsif x = 26 then P0_RXD <= X"11";
+       elsif x = 27 then P0_RXD <= X"22";
+       elsif x = 28 then P0_RXD <= X"33";
+       elsif x = 29 then P0_RXD <= X"44";
+       elsif x = 30 then P0_RXD <= X"55";
+       elsif x = 31 then P0_RXD <= X"66";
+       elsif x = 32 then P0_RXD <= X"11";
+       elsif x = 33 then P0_RXD <= X"22";
+       elsif x = 34 then P0_RXD <= X"33";
+       elsif x = 35 then P0_RXD <= X"44";
+       elsif x = 36 then P0_RXD <= X"55";
+       elsif x = 37 then P0_RXD <= X"66";
+
+       elsif x = 38 then P0_RXD <= X"18";     --18 Represents write scan table
+       elsif x = 39 then P0_RXD <= X"00";     --serial number
+       elsif x = 40 then P0_RXD <= X"00";
+       elsif x = 41 then P0_RXD <= X"00";     --Subframe number
+
+  --scan schedule
+#-SCANSCHEDULE-#
+
+   else  P0_RXDV <= '0';
+   end if;
+
+
+  --scan schedule 01 sub-frame
+   elsif y = #-SCANSCHEDULE_Y_INDEX_2-# then
+       if x <= 17 then
+	 P0_RXDV <= '0';
+	 P0_RXD <= X"00";
+	 test_crc <= X"00";
+       elsif x > 17 and x <= 24 then
+	 P0_RXDV <= '1';
+	 P0_RXD <= X"55";
+       elsif x = 25 then P0_RXD <= X"D5";
+       elsif x = 26 then P0_RXD <= X"11";
+       elsif x = 27 then P0_RXD <= X"22";
+       elsif x = 28 then P0_RXD <= X"33";
+       elsif x = 29 then P0_RXD <= X"44";
+       elsif x = 30 then P0_RXD <= X"55";
+       elsif x = 31 then P0_RXD <= X"66";
+       elsif x = 32 then P0_RXD <= X"11";
+       elsif x = 33 then P0_RXD <= X"22";
+       elsif x = 34 then P0_RXD <= X"33";
+       elsif x = 35 then P0_RXD <= X"44";
+       elsif x = 36 then P0_RXD <= X"55";
+       elsif x = 37 then P0_RXD <= X"66";
+
+       elsif x = 38 then P0_RXD <= X"18";     --18 Represents write scan table
+       elsif x = 39 then P0_RXD <= X"00";     --serial number
+       elsif x = 40 then P0_RXD <= X"00";
+       elsif x = 41 then P0_RXD <= X"01";     --Subframe number
+
+  --scan schedule
+#-SCANSCHEDULE2-#
+
+   else  P0_RXDV <= '0';
+   end if;
+
+
+    elsif y = #-CHIPCUSTOMPLUS_PARAM_Y_INDEX-# then      --Write 05 frame 01 sub-frame parameters, chip expansion
+	if x <= 17 then
+	 P0_RXDV <= '0';
+	 P0_RXD <= X"00";
+	 test_crc <= X"00";
+       elsif x > 17 and x <= 24 then
+	 P0_RXDV <= '1';
+	 P0_RXD <= X"55";
+       elsif x = 25 then P0_RXD <= X"D5";
+       elsif x = 26 then P0_RXD <= X"11";
+       elsif x = 27 then P0_RXD <= X"22";
+       elsif x = 28 then P0_RXD <= X"33";
+       elsif x = 29 then P0_RXD <= X"44";
+       elsif x = 30 then P0_RXD <= X"55";
+       elsif x = 31 then P0_RXD <= X"66";
+       elsif x = 32 then P0_RXD <= X"11";
+       elsif x = 33 then P0_RXD <= X"22";
+       elsif x = 34 then P0_RXD <= X"33";
+       elsif x = 35 then P0_RXD <= X"44";
+       elsif x = 36 then P0_RXD <= X"55";
+       elsif x = 37 then P0_RXD <= X"66";
+
+       elsif x = 38 then P0_RXD <= X"05";  --05 Represents basic parameter
+       elsif x = 39 then P0_RXD <= X"00";     --serial number
+       elsif x = 40 then P0_RXD <= X"00";
+       elsif x = 41 then P0_RXD <= X"01";     --Subframe number
+
+#-CHIPCUSTOMPLUS_PARAM-#
+      P0_RXDV <= '0';
+      end if;
+
+
+   elsif y = #-BASIC_PARAM_Y_INDEX-# then      --Write basic parameters
+       if x <= 17 then
+	 P0_RXDV <= '0';
+	 P0_RXD <= X"00";
+	 test_crc <= X"00";
+       elsif x > 17 and x <= 24 then
+	 P0_RXDV <= '1';
+	 P0_RXD <= X"55";
+       elsif x = 25 then P0_RXD <= X"D5";
+       elsif x = 26 then P0_RXD <= X"11";
+       elsif x = 27 then P0_RXD <= X"22";
+       elsif x = 28 then P0_RXD <= X"33";
+       elsif x = 29 then P0_RXD <= X"44";
+       elsif x = 30 then P0_RXD <= X"55";
+       elsif x = 31 then P0_RXD <= X"66";
+       elsif x = 32 then P0_RXD <= X"11";
+       elsif x = 33 then P0_RXD <= X"22";
+       elsif x = 34 then P0_RXD <= X"33";
+       elsif x = 35 then P0_RXD <= X"44";
+       elsif x = 36 then P0_RXD <= X"55";
+       elsif x = 37 then P0_RXD <= X"66";
+
+       elsif x = 38 then P0_RXD <= X"05";  --05 Represents basic parameter
+       elsif x = 39 then P0_RXD <= X"00";     --serial number
+       elsif x = 40 then P0_RXD <= X"00";
+       elsif x = 41 then P0_RXD <= X"00";     --Subframe number
+
+#-BASICPARAM-#
+      P0_RXDV <= '0';
+       end if;
+
+
+--Void line information table
+#-VOID_ROWCOL_PARAM-#
+
+--Anti-void line information table
+#-ANTI_VOID_ROWCOL_PARAM-#
+
+--Gamma Gray Table
+#-GAMACALIBRATION_GRAY-#
+
+--Gamma Refined Table
+#-GAMACALIBRATION_DELTA-#
+
+   elsif y = #-VOID_TABLE_Y_INDEX-# then      --Write a snapshot table
+       if x <= 17 then
+	 P0_RXDV <= '0';
+	 P0_RXD <= X"00";
+	 test_crc <= X"00";
+       elsif x > 17 and x <= 24 then
+	 P0_RXDV <= '1';
+	 P0_RXD <= X"55";
+       elsif x = 25 then P0_RXD <= X"D5";
+       elsif x = 26 then P0_RXD <= X"11";
+       elsif x = 27 then P0_RXD <= X"22";
+       elsif x = 28 then P0_RXD <= X"33";
+       elsif x = 29 then P0_RXD <= X"44";
+       elsif x = 30 then P0_RXD <= X"55";
+       elsif x = 31 then P0_RXD <= X"66";
+       elsif x = 32 then P0_RXD <= X"11";
+       elsif x = 33 then P0_RXD <= X"22";
+       elsif x = 34 then P0_RXD <= X"33";
+       elsif x = 35 then P0_RXD <= X"44";
+       elsif x = 36 then P0_RXD <= X"55";
+       elsif x = 37 then P0_RXD <= X"66";
+
+       elsif x = 38 then P0_RXD <= X"10";  --10 Represents Snapshot Table
+       elsif x = 39 then P0_RXD <= X"00";     --serial number
+       elsif x = 40 then P0_RXD <= X"00";
+       elsif x = 41 then P0_RXD <= X"00";     --Subframe number
+
+#-VOID_TABLE-#
+	P0_RXDV <= '0';
+       end if;
+
+--Anti Pixel Sequence
+#-ANTI_PIXEL_SEQUENCE_PARAM-#
+
+  --Data Remapping Table
+#-DATA_REMAPPING_TABLE_PARAM-#
+
+  --CHIP_REALTIME_PARAM
+#-CHIP_REALTIME_PARAM-#
+
+  --BASIC_PARAM_02_FRAME
+#-BASIC_PARAM_02_FRAME-#
+
+  --T_Anti_RouteTable
+#-T_Anti_RouteTable-#
+
+  --R8_Anti_RouteTable
+#-R8_Anti_RouteTable-#
+
+  --Shape_Parallel_Anti_RouteTable
+#-Shape_Parallel_Anti_RouteTable-#
+
+  --Shape_Serial_Pixel_Anti_RouteTable
+#-Shape_Serial_Pixel_Anti_RouteTable-#
+
+  --Shape_Serial_Pin_Anti_RouteTable
+#-Shape_Serial_Pin_Anti_RouteTable-#
+
+  --GAMA12TABLE-XYZ
+#-GAMA12TABLE-XYZ-#
+
+   elsif y = #-SWITCH_FRAME_Y_INDEX-# then      --Write switching frame
+       if x <= 17 then
+	 P0_RXDV <= '0';
+	 P0_RXD <= X"00";
+	 test_crc <= X"00";
+       elsif x > 17 and x <= 24 then
+	 P0_RXDV <= '1';
+	 P0_RXD <= X"55";
+       elsif x = 25 then P0_RXD <= X"D5";
+       elsif x = 26 then P0_RXD <= X"11";
+       elsif x = 27 then P0_RXD <= X"22";
+       elsif x = 28 then P0_RXD <= X"33";
+       elsif x = 29 then P0_RXD <= X"44";
+       elsif x = 30 then P0_RXD <= X"55";
+       elsif x = 31 then P0_RXD <= X"66";
+       elsif x = 32 then P0_RXD <= X"11";
+       elsif x = 33 then P0_RXD <= X"22";
+       elsif x = 34 then P0_RXD <= X"33";
+       elsif x = 35 then P0_RXD <= X"44";
+       elsif x = 36 then P0_RXD <= X"55";
+       elsif x = 37 then P0_RXD <= X"66";
+
+       elsif x = 38 then P0_RXD <= X"01";  --01 Represents switching frame
+
+#-SWITCH_FRAME_PARAM-#
+	  P0_RXDV <= '0';
+       end if;
+
+   elsif y >= #-LEFT_Y_INDEX-# and y < 800 then
+       if x <= 17 then
+	 P0_RXDV <= '0';
+	 P0_RXD <= X"00";
+	 test_crc <= X"00";
+       elsif x > 17 and x <= 24 then
+	 P0_RXDV <= '1';
+	 P0_RXD <= X"55";
+       elsif x = 25 then P0_RXD <= X"D5";
+       elsif x = 26 then P0_RXD <= X"11";
+       elsif x = 27 then P0_RXD <= X"22";
+       elsif x = 28 then P0_RXD <= X"33";
+       elsif x = 29 then P0_RXD <= X"44";
+       elsif x = 30 then P0_RXD <= X"55";
+       elsif x = 31 then P0_RXD <= X"66";
+       elsif x = 32 then P0_RXD <= X"11";
+       elsif x = 33 then P0_RXD <= X"22";
+       elsif x = 34 then P0_RXD <= X"33";
+       elsif x = 35 then P0_RXD <= X"44";
+       elsif x = 36 then P0_RXD <= X"55";
+       elsif x = 37 then P0_RXD <= X"66";
+
+       elsif x = 38 then P0_RXD <= X"55";test_crc <= X"55";frame_row_buff <= ("0000"&y) - #-LEFT_Y_INDEX-#;      --0x55 Display data
+      --currrow
+      elsif x = 39 then  --currrow
+	 P0_RXD <= frame_row_buff(15 downto 8);
+	 test_crc <= test_crc + frame_row_buff(15 downto 8);
+      elsif x = 40 then
+	 P0_RXD <= frame_row_buff(7 downto 0);
+	 test_crc <= test_crc + frame_row_buff(7 downto 0);
+	 test_col <= (others => '0');
+	 test_rgb_cnt	<=(others => '0');
+      elsif x = 41 or x = 42 then P0_RXD <= X"00";  --Starting point of column pixel
+      elsif x = 43 then P0_RXD <= X"02"; --The effective number of pixels in this line, the simulation design is 640 pixels
+      elsif x = 44 then P0_RXD <= X"80";  --
+      elsif x = 45 then P0_RXD <= X"08";  --ARGB and RGB have 8 bytes for each color.
+      elsif x = 46 then P0_RXD <= X"88";
+
+--begin to send 640*3 display data
+      elsif x >= 47 and x < 1967 then
+	 if test_rgb_cnt = "00" then  --to ensure rgb is the same
+	     test_rgb_cnt <= "01";
+	     P0_RXD <= test_col;
+	     test_row <= frame_row_buff(7 downto 0);
+	 elsif test_rgb_cnt = "01" then
+	     test_rgb_cnt <= "10";
+	     P0_RXD <= test_col;
+	 elsif test_rgb_cnt = "10" then
+	     test_rgb_cnt <= "00";
+	     P0_RXD <= test_col;
+	     test_col <= test_col + '1';
+	 end if;
+      else
+	 P0_RXDV <= '0';
+      end if;
+
+   end if;
+
+   end if;
+
+end process;
+
+
+end behav;

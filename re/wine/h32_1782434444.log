@@ -1,0 +1,10 @@
+=== h32 args: 0 0 ===
+nic=77c10000 dev=78ae0000 GLE=0
+count=77c11be0 info=77c11c30 ddet=78bc3500 gc=78bc3710 gname=78bc37f0
+adapters=2
+  [0] 'enp4s0'
+  [1] 'enx9c69d388d76e'
+DefaultDetectAll(0,0)...
+DefaultDetectAll ret=0xe0830040
+GetCount=0
+(wine rc=0)

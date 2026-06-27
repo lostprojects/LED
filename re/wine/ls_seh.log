@@ -1,0 +1,118 @@
+008c:fixme:hid:handle_IRP_MN_QUERY_ID Unhandled type 00000005
+0090:fixme:wineusb:add_usb_device Interface 1 has 2 alternate settings; using the first one.
+008c:fixme:hid:handle_IRP_MN_QUERY_ID Unhandled type 00000005
+008c:fixme:hid:handle_IRP_MN_QUERY_ID Unhandled type 00000005
+008c:fixme:hid:handle_IRP_MN_QUERY_ID Unhandled type 00000005
+008c:trace:seh:dispatch_exception code=6ba flags=0 addr=00006FFFFF483F07 ip=6fffff483f07
+008c:warn:seh:dispatch_exception RPC_S_SERVER_UNAVAILABLE exception (code=6ba) raised
+008c:trace:seh:dispatch_exception  rax=00007fffff2ef290 rbx=00007fffff2ef578 rcx=00007fffff2ef290 rdx=0000000000000000
+008c:trace:seh:dispatch_exception  rsi=00000000000000c8 rdi=00007ffffebf45c0 rbp=00007fffff2ef360 rsp=00007fffff2ef270
+008c:trace:seh:dispatch_exception   r8=0000000000000000  r9=0000000000000000 r10=00007ffffec1c5b0 r11=0000000000000010
+008c:trace:seh:dispatch_exception  r12=0000000000008000 r13=00000000000000b4 r14=00007ffffec1c4f0 r15=0000000000000000
+008c:trace:seh:call_vectored_handlers calling handler at 00006FFFFB93D880 code=6ba flags=0
+008c:trace:seh:call_vectored_handlers handler at 00006FFFFB93D880 returned 0
+008c:trace:seh:call_stack_handlers found wine frame 00007FFFFF2EF450 rsp 00007FFFFF2EF750 handler 00006FFFFB952510
+008c:trace:seh:call_teb_handler calling TEB handler 00006FFFFB952510 (rec=00007FFFFF2EF290, frame=00007FFFFF2EF450 context=00007FFFFF2EE7D0, dispatch=00007FFFFF2EE6A0)
+008c:trace:seh:call_teb_handler handler at 00006FFFFB952510 returned 1
+008c:trace:seh:call_stack_handlers found wine frame 00007FFFFF2EF780 rsp 00007FFFFF2EF8D0 handler 00006FFFFB953B60
+008c:trace:seh:call_teb_handler calling TEB handler 00006FFFFB953B60 (rec=00007FFFFF2EF290, frame=00007FFFFF2EF780 context=00007FFFFF2EE7D0, dispatch=00007FFFFF2EE6A0)
+008c:trace:seh:RtlRestoreContext returning to 00006FFFFB953AFA stack 00007FFFFF2EF750
+008c:trace:seh:dispatch_exception code=6ba flags=0 addr=00006FFFFF483F07 ip=6fffff483f07
+008c:warn:seh:dispatch_exception RPC_S_SERVER_UNAVAILABLE exception (code=6ba) raised
+008c:trace:seh:dispatch_exception  rax=00007fffff2ef290 rbx=00007fffff2ef578 rcx=00007fffff2ef290 rdx=0000000000000000
+008c:trace:seh:dispatch_exception  rsi=00000000000000c8 rdi=00007ffffebf45c0 rbp=00007fffff2ef360 rsp=00007fffff2ef270
+008c:trace:seh:dispatch_exception   r8=0000000000000000  r9=0000000000000000 r10=00007ffffec1f1a0 r11=0000000000000010
+008c:trace:seh:dispatch_exception  r12=0000000000008000 r13=00000000000000b4 r14=00007ffffec1c4f0 r15=0000000000000000
+008c:trace:seh:call_vectored_handlers calling handler at 00006FFFFB93D880 code=6ba flags=0
+008c:trace:seh:call_vectored_handlers handler at 00006FFFFB93D880 returned 0
+008c:trace:seh:call_stack_handlers found wine frame 00007FFFFF2EF450 rsp 00007FFFFF2EF750 handler 00006FFFFB952510
+008c:trace:seh:call_teb_handler calling TEB handler 00006FFFFB952510 (rec=00007FFFFF2EF290, frame=00007FFFFF2EF450 context=00007FFFFF2EE7D0, dispatch=00007FFFFF2EE6A0)
+008c:trace:seh:call_teb_handler handler at 00006FFFFB952510 returned 1
+008c:trace:seh:call_stack_handlers found wine frame 00007FFFFF2EF780 rsp 00007FFFFF2EF8D0 handler 00006FFFFB953B60
+008c:trace:seh:call_teb_handler calling TEB handler 00006FFFFB953B60 (rec=00007FFFFF2EF290, frame=00007FFFFF2EF780 context=00007FFFFF2EE7D0, dispatch=00007FFFFF2EE6A0)
+008c:trace:seh:RtlRestoreContext returning to 00006FFFFB953AFA stack 00007FFFFF2EF750
+008c:trace:seh:dispatch_exception code=6ba flags=0 addr=00006FFFFF483F07 ip=6fffff483f07
+008c:warn:seh:dispatch_exception RPC_S_SERVER_UNAVAILABLE exception (code=6ba) raised
+008c:trace:seh:dispatch_exception  rax=00007fffff2ef290 rbx=00007fffff2ef578 rcx=00007fffff2ef290 rdx=0000000000000000
+008c:trace:seh:dispatch_exception  rsi=00000000000000c8 rdi=00007ffffebf45c0 rbp=00007fffff2ef360 rsp=00007fffff2ef270
+008c:trace:seh:dispatch_exception   r8=0000000000000000  r9=0000000000000000 r10=00007ffffec212b0 r11=0000000000000010
+008c:trace:seh:dispatch_exception  r12=0000000000008000 r13=00000000000000b4 r14=00007ffffec211f0 r15=0000000000000000
+008c:trace:seh:call_vectored_handlers calling handler at 00006FFFFB93D880 code=6ba flags=0
+008c:trace:seh:call_vectored_handlers handler at 00006FFFFB93D880 returned 0
+008c:trace:seh:call_stack_handlers found wine frame 00007FFFFF2EF450 rsp 00007FFFFF2EF750 handler 00006FFFFB952510
+008c:trace:seh:call_teb_handler calling TEB handler 00006FFFFB952510 (rec=00007FFFFF2EF290, frame=00007FFFFF2EF450 context=00007FFFFF2EE7D0, dispatch=00007FFFFF2EE6A0)
+008c:trace:seh:call_teb_handler handler at 00006FFFFB952510 returned 1
+008c:trace:seh:call_stack_handlers found wine frame 00007FFFFF2EF780 rsp 00007FFFFF2EF8D0 handler 00006FFFFB953B60
+008c:trace:seh:call_teb_handler calling TEB handler 00006FFFFB953B60 (rec=00007FFFFF2EF290, frame=00007FFFFF2EF780 context=00007FFFFF2EE7D0, dispatch=00007FFFFF2EE6A0)
+008c:trace:seh:RtlRestoreContext returning to 00006FFFFB953AFA stack 00007FFFFF2EF750
+008c:trace:seh:dispatch_exception code=6ba flags=0 addr=00006FFFFF483F07 ip=6fffff483f07
+008c:warn:seh:dispatch_exception RPC_S_SERVER_UNAVAILABLE exception (code=6ba) raised
+008c:trace:seh:dispatch_exception  rax=00007fffff2ef290 rbx=00007fffff2ef578 rcx=00007fffff2ef290 rdx=0000000000000000
+008c:trace:seh:dispatch_exception  rsi=00000000000000c8 rdi=00007ffffebf45c0 rbp=00007fffff2ef360 rsp=00007fffff2ef270
+008c:trace:seh:dispatch_exception   r8=0000000000000000  r9=0000000000000000 r10=00007ffffec212b0 r11=0000000000000010
+008c:trace:seh:dispatch_exception  r12=0000000000008000 r13=00000000000000b4 r14=00007ffffec211f0 r15=0000000000000000
+008c:trace:seh:call_vectored_handlers calling handler at 00006FFFFB93D880 code=6ba flags=0
+008c:trace:seh:call_vectored_handlers handler at 00006FFFFB93D880 returned 0
+008c:trace:seh:call_stack_handlers found wine frame 00007FFFFF2EF450 rsp 00007FFFFF2EF750 handler 00006FFFFB952510
+008c:trace:seh:call_teb_handler calling TEB handler 00006FFFFB952510 (rec=00007FFFFF2EF290, frame=00007FFFFF2EF450 context=00007FFFFF2EE7D0, dispatch=00007FFFFF2EE6A0)
+008c:trace:seh:call_teb_handler handler at 00006FFFFB952510 returned 1
+008c:trace:seh:call_stack_handlers found wine frame 00007FFFFF2EF780 rsp 00007FFFFF2EF8D0 handler 00006FFFFB953B60
+008c:trace:seh:call_teb_handler calling TEB handler 00006FFFFB953B60 (rec=00007FFFFF2EF290, frame=00007FFFFF2EF780 context=00007FFFFF2EE7D0, dispatch=00007FFFFF2EE6A0)
+008c:trace:seh:RtlRestoreContext returning to 00006FFFFB953AFA stack 00007FFFFF2EF750
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+008c:fixme:wineusb:query_id Unhandled ID query type 0x5.
+002c:fixme:ver:GetCurrentPackageId (00007FFFFE2FFEA0 0000000000000000): stub
+0050:trace:seh:dispatch_exception code=6ba flags=0 addr=00006FFFFF483F07 ip=6fffff483f07
+0050:warn:seh:dispatch_exception RPC_S_SERVER_UNAVAILABLE exception (code=6ba) raised
+0050:trace:seh:dispatch_exception  rax=00007ffffe2fe890 rbx=00007ffffe2feb78 rcx=00007ffffe2fe890 rdx=0000000000000000
+0050:trace:seh:dispatch_exception  rsi=000000000000006c rdi=00007ffffe8fad30 rbp=00007ffffe2fe960 rsp=00007ffffe2fe870
+0050:trace:seh:dispatch_exception   r8=0000000000000000  r9=0000000000000000 r10=00007ffffe8fb460 r11=0000000000000010
+0050:trace:seh:dispatch_exception  r12=0000000000000001 r13=00007ffffe32ae00 r14=00007ffffe8fad30 r15=0000000000000001
+0050:trace:seh:call_stack_handlers found wine frame 00007FFFFE2FEA50 rsp 00007FFFFE2FED50 handler 00006FFFFE6047D0
+0050:trace:seh:call_teb_handler calling TEB handler 00006FFFFE6047D0 (rec=00007FFFFE2FE890, frame=00007FFFFE2FEA50 context=00007FFFFE2FDDD0, dispatch=00007FFFFE2FDCA0)
+0050:trace:seh:call_teb_handler handler at 00006FFFFE6047D0 returned 1
+0050:trace:seh:call_stack_handlers found wine frame 00007FFFFE2FEDA0 rsp 00007FFFFE2FEEF0 handler 00006FFFFE607040
+0050:trace:seh:call_teb_handler calling TEB handler 00006FFFFE607040 (rec=00007FFFFE2FE890, frame=00007FFFFE2FEDA0 context=00007FFFFE2FDDD0, dispatch=00007FFFFE2FDCA0)
+0050:trace:seh:RtlRestoreContext returning to 00006FFFFE606FDA stack 00007FFFFE2FED50
+00dc:fixme:nls:RtlGetThreadPreferredUILanguages 00000038, 00007FFFFE1FF1E0, 00007FFFFE1FF1F0 00007FFFFE1FF1E4
+00dc:fixme:nls:get_dummy_preferred_ui_language (0x38 0x409 00007FFFFE1FF1E0 00007FFFFE1FF1F0 00007FFFFE1FF1E4) returning a dummy value (current locale)
+0034:fixme:ver:GetCurrentPackageId (00007FFFFE2FFEA0 0000000000000000): stub
+00dc:fixme:nls:RtlGetThreadPreferredUILanguages 00000038, 00007FFFFE1FF110, 00007FFFFE1FF120 00007FFFFE1FF114
+00dc:fixme:nls:get_dummy_preferred_ui_language (0x38 0x409 00007FFFFE1FF110 00007FFFFE1FF120 00007FFFFE1FF114) returning a dummy value (current locale)
+00dc:fixme:nls:RtlGetThreadPreferredUILanguages 00000038, 00007FFFFE1FF1D0, 00007FFFFE1FF1E0 00007FFFFE1FF1D4
+00dc:fixme:nls:get_dummy_preferred_ui_language (0x38 0x409 00007FFFFE1FF1D0 00007FFFFE1FF1E0 00007FFFFE1FF1D4) returning a dummy value (current locale)
+00dc:fixme:nls:RtlGetThreadPreferredUILanguages 00000038, 00007FFFFE1FF120, 00007FFFFE1FF130 00007FFFFE1FF124
+00dc:fixme:nls:get_dummy_preferred_ui_language (0x38 0x409 00007FFFFE1FF120 00007FFFFE1FF130 00007FFFFE1FF124) returning a dummy value (current locale)
+00dc:fixme:nls:RtlGetThreadPreferredUILanguages 00000038, 00007FFFFE1FF120, 00007FFFFE1FF130 00007FFFFE1FF124
+00dc:fixme:nls:get_dummy_preferred_ui_language (0x38 0x409 00007FFFFE1FF120 00007FFFFE1FF130 00007FFFFE1FF124) returning a dummy value (current locale)
+00dc:err:winediag:ntlm_check_version ntlm_auth was not found. Make sure that ntlm_auth >= 3.0.25 is in your path. Usually, you can find it in the winbind package of your distribution.
+00dc:err:ntlm:ntlm_LsaApInitializePackage no NTLM support, expect problems
+00dc:fixme:ntdll:EtwRegisterTraceGuidsW   register trace class {72b14a7d-704c-423e-92f8-7e6d64bcb92a}
+00dc:fixme:ntdll:EtwRegisterTraceGuidsW   register trace class {e2091f8a-1e0a-4731-84a2-0dd57c8a5261}
+00dc:fixme:ntdll:EtwRegisterTraceGuidsW   register trace class {e8a3bf1f-a86b-4390-9c60-5390b969d22c}
+00dc:fixme:ntdll:EtwRegisterTraceGuidsW   register trace class {5727a00f-50be-4519-8256-f7699871fecb}
+00dc:fixme:ntdll:EtwRegisterTraceGuidsW   register trace class {7e854ec7-cdc4-405a-b5b2-aaf7c9e7d40c}
+00dc:fixme:ntdll:EtwRegisterTraceGuidsW   register trace class {79a60dc6-5fc8-4952-a41c-1163aeec5eb8}
+00dc:fixme:ntdll:EtwRegisterTraceGuidsW   register trace class {2718d25b-5bf5-4479-8e88-babc64bdbfca}
+00dc:fixme:heap:GetNumaHighestNodeNumber semi-stub: 00007FFFFE1FFB70
+00dc:fixme:nls:RtlGetThreadPreferredUILanguages 00000038, 00007FFFFE1FF4C0, 00007FFFFE1FF4D0 00007FFFFE1FF4C4
+00dc:fixme:nls:get_dummy_preferred_ui_language (0x38 0x409 00007FFFFE1FF4C0 00007FFFFE1FF4D0 00007FFFFE1FF4C4) returning a dummy value (current locale)
+00dc:fixme:ntdll:NtQuerySystemInformation info_class SYSTEM_PERFORMANCE_INFORMATION
+00dc:fixme:d3d:wined3d_check_device_format_conversion output 00007FFFFFC1AF50, device_type WINED3D_DEVICE_TYPE_HAL, src_format WINED3DFMT_B8G8R8X8_UNORM, dst_format WINED3DFMT_B8G8R8X8_UNORM stub!
+00dc:fixme:shell:InitNetworkAddressControl stub

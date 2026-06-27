@@ -1,0 +1,41 @@
+[project]
+name = "led-bar-menu"
+version = "0.1.0"
+description = "Bring up 12x 64x64 HUB75 LED panels from a Linux Mac mini via a Colorlight 5A-75E receiver over raw Layer-2 Ethernet."
+requires-python = ">=3.10"
+
+# Third-party Python packages this project imports (installable: `pip install -e .`
+# or `pip install pefile unicorn`). Everything that is NOT pip-installable
+# (proprietary binaries, vendored projects, system toolchain) is declared under
+# [tool.thirdparty] below and detailed in THIRD_PARTY.md.
+dependencies = [
+    "pefile>=2023.2.7",   # PE parsing for the CLTDevice.dll Unicorn harnesses (re/emu/)
+    "unicorn>=2.0.1",     # Unicorn Engine: emulate the 32-bit DLL serializer offline
+]
+
+# -----------------------------------------------------------------------------
+# Non-pip third-party software. None of this is fetched by pip; it is recorded
+# here (and in THIRD_PARTY.md, with sources + licenses) so every "part that uses
+# someone else's software" is declared in one place.
+# -----------------------------------------------------------------------------
+[tool.thirdparty.proprietary]
+# Colorlight LEDVISION runtime DLLs. PROPRIETARY — NOT redistributed in this repo
+# (git-ignored). Obtain by installing LEDVISION and copying them to re/dll/.
+# Used only as RE inputs (static analysis + offline Unicorn emulation).
+"CLTDevice.dll"   = { source = "Colorlight LEDVISION install", path = "re/dll/CLTDevice.dll" }
+"CLTNic.dll"      = { source = "Colorlight LEDVISION install", path = "re/dll/CLTNic.dll" }
+"CommonClass.dll" = { source = "Colorlight LEDVISION install", path = "re/dll/CommonClass.dll" }
+
+[tool.thirdparty.vendored]
+# Open-source project vendored into the tree (Plan B fallback gateware).
+"colorlight_5a-75e_artnet" = { description = "Art-Net HUB75 gateware for the Colorlight 5A-75E (Lattice ECP5)", upstream = "jimbobelectronics — colorlight_5a-75e_artnet", builds-on = "q3k/chubby75" }
+
+[tool.thirdparty.toolchain]
+# System tools invoked by scripts/build steps — install via your OS, not pip.
+wine           = { use = "run the real LEDVISION/CLTNic against libpcap (reference route)", url = "https://winehq.org" }
+radare2        = { use = "static RE of the DLLs (re/cltdevice.r2proj)", url = "https://rada.re" }
+liteeth        = { use = "Ethernet MAC/PHY core for the gateware", url = "https://github.com/enjoy-digital/liteeth" }
+yosys          = { use = "FPGA synthesis", url = "https://github.com/YosysHQ/yosys" }
+"nextpnr-ecp5" = { use = "FPGA place-and-route", url = "https://github.com/YosysHQ/nextpnr" }
+openFPGALoader = { use = "flash the bitstream over JTAG", url = "https://github.com/trabucayre/openFPGALoader" }
+DirtyJTAG      = { use = "Blue Pill / RP2040 JTAG probe firmware", url = "https://github.com/jeanthom/DirtyJTAG" }

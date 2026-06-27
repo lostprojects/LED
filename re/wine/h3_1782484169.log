@@ -1,0 +1,11 @@
+=== h3 args: 1 0 0 ===
+nic=00006ffff30e0000 dev=00006ffff2d30000
+detectall=00006ffff2e67150 getcount=00006ffff2e67370 settarget=00006ffff2e5b610
+adapters=2
+  [0] desc='enp4s0'
+  [1] desc='enx9c69d388d76e'
+CLTSetTargetDevice(1)
+CLTReceiverDetectAll(0,0,buf=00007fffff400000)...
+DetectAll ret=-528285120 (0xe0830240)
+CLTReceiverGetCount=0
+(wine rc=0, 124=timeout)

@@ -1,0 +1,29 @@
+=== probe args:  ===
+pcap=00007ffffe3260a0
+Nic_Write=00006ffffb1825b0 Nic_Read=00006ffffb1825d0
+getmgr=00006ffffc80c430 init=00006ffffc809e60 save=00006ffffc80a360 det=00006ffffc807150 ddet=00006ffffc807090 gc=00006ffffc807370 st=00006ffffc7fb610
+
+== BASELINE (before refresh) ==
+DefaultDetectAll=0xe0830240  GetCount=0
+
+== STEP 1/2: GetHwDeviceManager + refresh vt[2] ==
+mgr=00006ffffca44520
+vtbl=00006ffffc9cb4c0
+CLTDevice base=00006ffffc6d0000
+vt[2] (refresh) = 00006ffffc824f70   rva=0x154f70  (expect 0x154f70)
+
+-- refresh(mgr, 0) --
+refresh(0)=0xe0830101 (3766681857)   Nic_Write+=0 Nic_Read+=0  GetCount=0
+
+-- refresh(mgr, 1) --
+refresh(1)=0xe0830101 (3766681857)   Nic_Write+=0 Nic_Read+=0  GetCount=0
+
+== STEP 3: detect exports AFTER refresh ==
+DefaultDetectAll=0xe0830240  GetCount=0
+DetectAll=0xe0830240  GetCount=0
+
+== receiver count after detect = 0 ==
+(read-only mode; pass 'save' arg to attempt SaveToDevice)
+
+total Nic_Write=0  Nic_Read=0
+(wine rc=0, 124=timeout)

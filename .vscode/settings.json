@@ -1,0 +1,34 @@
+{
+  // --- Why this file exists ---
+  // The two Wine prefixes (.wine-led, .wine-led64) are ~30k files / ~3GB of
+  // Windows DLLs, fonts, and CEF/Chromium payloads. With no excludes, VSCode's
+  // file watcher + ripgrep indexer tried to watch/scan all of it, pegging 3+
+  // cores (rg at 300%+ CPU, load avg ~6 on a 4-core box) and crashing the
+  // window whenever an agent created files (screenshots, pcaps, .exe builds)
+  // under the watched tree. These excludes stop that. Reload the window after
+  // editing this file for watcherExclude to take effect.
+
+  "files.watcherExclude": {
+    "**/.wine-led/**": true,
+    "**/.wine-led64/**": true,
+    "**/__pycache__/**": true,
+    "**/*.r2proj.d/**": true,
+    "**/*.r2proj": true,
+    "**/re/capture/**": true
+  },
+
+  "search.exclude": {
+    "**/.wine-led/**": true,
+    "**/.wine-led64/**": true,
+    "**/__pycache__/**": true,
+    "**/*.r2proj.d/**": true,
+    "**/*.r2proj": true
+  },
+
+  "files.exclude": {
+    "**/.wine-led/**": true,
+    "**/.wine-led64/**": true,
+    "**/__pycache__/**": true,
+    "**/*.r2proj.d/**": true
+  }
+}

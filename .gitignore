@@ -1,0 +1,22 @@
+# Wine prefixes — ~30k files / ~3GB of Windows DLLs, fonts, CEF payloads.
+# These crashed VSCode's indexer (see memory/vscode-crash-cause.md); never commit them.
+.wine-led/
+.wine-led64/
+
+# Python
+__pycache__/
+*.pyc
+
+# radare2 project scratch
+*.r2proj.d/
+
+# Secrets
+.env
+
+# Large binary capture artifacts (keep the harnesses + decoded text, not raw dumps).
+# Comment these out if a specific pcap is worth versioning.
+re/capture/*.pcap
+re/capture/*.log
+
+# Proprietary Colorlight LEDVISION DLLs — see THIRD_PARTY.md (not redistributable)
+re/dll/*.dll

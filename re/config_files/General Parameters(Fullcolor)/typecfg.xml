@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Setting>
+<Item>
+    <NAME>1- full-color static eight rows and eight columns.rcvp</NAME>
+		<Chinese>1-全彩静态八行八列</Chinese>
+		<Chinese_BIG5>1-全彩靜態八行八列</Chinese_BIG5>
+		<English>1- full-color static eight rows and eight columns</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>2- full-color static eight rows and sixteen columns.rcvp</NAME>
+		<Chinese>2-全彩静态八行十六列</Chinese>
+		<Chinese_BIG5>2-全彩靜態八行十六列</Chinese_BIG5>
+		<English>2- full-color static eight rows and sixteen columns</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>3- full-color static four rows and four columns.rcvp</NAME>
+		<Chinese>3-全彩静态四行四列</Chinese>
+		<Chinese_BIG5>3-全彩靜態八行四列</Chinese_BIG5>
+		<English>3- full-color static four rows and four columns</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>4- full-color two scan four rows and eight columns no 138 chip.rcvp</NAME>
+		<Chinese>4-全彩两扫四行八列无138</Chinese>
+		<Chinese_BIG5>4-全彩兩掃四行八列無138</Chinese_BIG5>
+		<English>4- full-color two scan four rows and eight columns no 138 chip</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>5- full-color four scan not split type 1.rcvp</NAME>
+		<Chinese>5-全彩四扫不打折1型</Chinese>
+		<Chinese_BIG5>5-全彩四掃不打折1型</Chinese_BIG5>
+		<English>5- full-color four scan not split type 1</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>6- full-color four scan two rows and eight columns type U1.rcvp</NAME>
+		<Chinese>6-全彩四扫两行八列U1型</Chinese>
+		<Chinese_BIG5>6-全彩四掃兩行八列U1型</Chinese_BIG5>
+		<English>6- full-color four scan two rows and eight columns type U1</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>7- full-color four scan two rows and eight columns type U2.rcvp</NAME>
+		<Chinese>7-全彩四扫两行八列U2型</Chinese>
+		<Chinese_BIG5>7-全彩四掃兩行八列U2型</Chinese_BIG5>
+		<English>7- full-color four scan two rows and eight columns type U2</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>8- full-color four scan two rows and eight columns type U3.rcvp</NAME>
+		<Chinese>8-全彩四扫两行八列U3型</Chinese>
+		<Chinese_BIG5>8-全彩四掃兩行八列U3型</Chinese_BIG5>
+		<English>8- full-color four scan two rows and eight columns type U3</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>9- full-color four scan two rows and eight columns type U4.rcvp</NAME>
+		<Chinese>9-全彩四扫两行八列U4型</Chinese>
+		<Chinese_BIG5>9-全彩四掃兩行八列U4型</Chinese_BIG5>
+		<English>9- full-color four scan two rows and eight columns type U4</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>10- full-color four scan two rows and eight columns type Z1.rcvp</NAME>
+		<Chinese>10-全彩四扫两行八列Z1型</Chinese>
+		<Chinese_BIG5>10-全彩四掃兩行八列Z1型</Chinese_BIG5>
+		<English>10- full-color four scan two rows and eight columns type Z1</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>11- full-color four scan two rows and eight columns type Z2.rcvp</NAME>
+		<Chinese>11-全彩四扫两行八列Z2型</Chinese>
+		<Chinese_BIG5>11-全彩四掃兩行八列Z2型</Chinese_BIG5>
+		<English>11- full-color four scan two rows and eight columns type Z2</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>12- full-color four scan two rows and eight columns type Z3.rcvp</NAME>
+		<Chinese>12-全彩四扫两行八列Z3型</Chinese>
+		<Chinese_BIG5>12-全彩四掃兩行八列Z3型</Chinese_BIG5>
+		<English>12- full-color four scan two rows and eight columns type Z3</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>13- full-color four scan two rows and eight columns type Z4.rcvp</NAME>
+		<Chinese>13-全彩四扫两行八列Z4型</Chinese>
+		<Chinese_BIG5>13-全彩四掃兩行八列Z4型</Chinese_BIG5>
+		<English>13- full-color four scan two rows and eight columns type Z4</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>14- full-color eight scan.rcvp</NAME>
+		<Chinese>14-全彩八扫</Chinese>
+		<Chinese_BIG5>14-全彩八掃</Chinese_BIG5>
+		<English>14- full-color eight scan</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>15- full-color eight scan not split type 1.rcvp</NAME>
+		<Chinese>15-全彩八扫不打折1型</Chinese>
+		<Chinese_BIG5>15-全彩八掃不打折1型</Chinese_BIG5>
+		<English>15- full-color eight scan not split type 1</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>16- full-color eight scan not split type 2.rcvp</NAME>
+		<Chinese>16-全彩八扫不打折2型</Chinese>
+		<Chinese_BIG5>16-全彩八掃不打折2型</Chinese_BIG5>
+		<English>16- full-color eight scan not split type 2</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>17- full-color eight scan two rows and eight columns type U1.rcvp</NAME>
+		<Chinese>17-全彩八扫两行八列U1型</Chinese>
+		<Chinese_BIG5>17-全彩八掃兩行八列U1型</Chinese_BIG5>
+		<English>17- full-color eight scan two rows and eight columns type U1</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>18- full-color eight scan two rows and eight columns type U2.rcvp</NAME>
+		<Chinese>18-全彩八扫两行八列U2型</Chinese>
+		<Chinese_BIG5>18-全彩八掃兩行八列U2型</Chinese_BIG5>
+		<English>18- full-color eight scan two rows and eight columns type U2</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>19- full-color eight scan two rows and eight columns type U3.rcvp</NAME>
+		<Chinese>19-全彩八扫两行八列U3型</Chinese>
+		<Chinese_BIG5>19-全彩八掃兩行八列U3型</Chinese_BIG5>
+		<English>19- full-color eight scan two rows and eight columns type U3</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>20- full-color eight scan two rows and eight columns type U4.rcvp</NAME>
+		<Chinese>20-全彩八扫两行八列U4型</Chinese>
+		<Chinese_BIG5>20-全彩八掃兩行八列U4型</Chinese_BIG5>
+		<English>20- full-color eight scan two rows and eight columns type U4</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>21- full-color eight scan two rows and eight columns type Z1.rcvp</NAME>
+		<Chinese>21-全彩八扫两行八列Z1型</Chinese>
+		<Chinese_BIG5>21-全彩八掃兩行八列Z1型</Chinese_BIG5>
+		<English>21- full-color eight scan two rows and eight columns type Z1</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>22- full-color eight scan two rows and eight columns type Z2.rcvp</NAME>
+		<Chinese>22-全彩八扫两行八列Z2型</Chinese>
+		<Chinese_BIG5>22-全彩八掃兩行八列Z2型</Chinese_BIG5>
+		<English>22- full-color eight scan two rows and eight columns type Z2</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>23- full-color eight scan two rows and eight columns type Z3.rcvp</NAME>
+		<Chinese>23-全彩八扫两行八列Z3型</Chinese>
+		<Chinese_BIG5>23-全彩八掃兩行八列Z3型</Chinese_BIG5>
+		<English>23- full-color eight scan two rows and eight columns type Z3</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>24- full-color eight scan two rows and eight columns type Z4.rcvp</NAME>
+		<Chinese>24-全彩八扫两行八列Z4型</Chinese>
+		<Chinese_BIG5>24-全彩八掃兩行八列Z4型</Chinese_BIG5>
+		<English>24- full-color eight scan two rows and eight columns type Z4</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>25- full-color sixteen scan.rcvp</NAME>
+		<Chinese>25-全彩十六扫</Chinese>
+		<Chinese_BIG5>25-全彩十六掃</Chinese_BIG5>
+		<English>25- full-color sixteen scan</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+<Item>
+    <NAME>26- full-color thirty-two scan.rcvp</NAME>
+		<Chinese>26-全彩三十二扫</Chinese>
+		<Chinese_BIG5>26-全彩三十二掃</Chinese_BIG5>
+		<English>26- full-color thirty-two scan</English>
+		<French></French>
+		<Japanese></Japanese>
+		<Korean></Korean>
+		<Russian></Russian>
+		<Thai></Thai>
+		<Spanish></Spanish>
+		<Polish></Polish>
+		<Swedish></Swedish>
+</Item>
+
+</Setting>

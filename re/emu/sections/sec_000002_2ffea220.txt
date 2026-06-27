@@ -1,0 +1,98 @@
+		elsif x = 42 then P0_RXD <= X"00";          --00 Represents 8bit		
+		elsif x = 43 then P0_RXD <= X"02";          --02 Represents HDR		
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"02";          --02 Represents 10bit		
+		elsif x = 43 then P0_RXD <= X"03";          --03 Represents HLG		
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"02";          --02 Represents 10bit		
+		elsif x = 43 then P0_RXD <= X"03";          --03 Represents HLG		
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"02";          --02 Represents 10bit		
+		elsif x = 43 then P0_RXD <= X"03";          --03 Represents HLG		
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"02";          --02 Represents 10bit		
+		elsif x = 43 then P0_RXD <= X"03";          --03 Represents HLG		
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"02";          --02 Represents 10bit		
+		elsif x = 43 then P0_RXD <= X"03";          --03 Represents HLG		
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"02";          --02 Represents 10bit		
+		elsif x = 43 then P0_RXD <= X"03";          --03 Represents HLG		
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"02";          --02 Represents 10bit		
+		elsif x = 43 then P0_RXD <= X"03";          --03 Represents HLG		
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"02";          --02 Represents 10bit		
+		elsif x = 43 then P0_RXD <= X"03";          --03 Represents HLG		
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"00";          --00 Represents 8bit		
+		elsif x = 43 then P0_RXD <= X"03";          --03 Represents HLG		
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"02";          --02 Represents 10bit		
+		elsif x = 43 then P0_RXD <= X"00";          
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"02";          --02 Represents 10bit		
+		elsif x = 43 then P0_RXD <= X"00";          
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"02";          --02 Represents 10bit		
+		elsif x = 43 then P0_RXD <= X"00";          
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"02";          --02 Represents 10bit		
+		elsif x = 43 then P0_RXD <= X"00";          
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"02";          --02 Represents 10bit		
+		elsif x = 43 then P0_RXD <= X"00";          
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"02";          --02 Represents 10bit		
+		elsif x = 43 then P0_RXD <= X"00";          
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"02";          --02 Represents 10bit		
+		elsif x = 43 then P0_RXD <= X"00";          
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"02";          --02 Represents 10bit		
+		elsif x = 43 then P0_RXD <= X"00";          
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"00";          
+		elsif x = 43 then P0_RXD <= X"00";          
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 45 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"00";          
+		elsif x = 43 then P0_RXD <= X"00";          
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 45 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"00";          
+		elsif x = 43 then P0_RXD <= X"00";          
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 45 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"00";          
+		elsif x = 43 then P0_RXD <= X"00";          
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 45 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"00";		  
+		elsif x = 42 then P0_RXD <= X"00";		  
+		elsif x = 42 then P0_RXD <= X"00";		  
+		elsif x = 42 then P0_RXD <= X"00";		  
+		elsif x = 42 then P0_RXD <= X"00";		  
+		elsif x = 42 then P0_RXD <= X"00";		  
+		elsif x = 42 then P0_RXD <= X"00";		  
+		elsif x = 42 then P0_RXD <= X"00";		  
+		elsif x = 42 then P0_RXD <= X"00";		  
+		elsif x = 42 then P0_RXD <= X"00";		  
+		elsif x = 42 then P0_RXD <= X"00";		  
+		elsif x = 42 then P0_RXD <= X"00";		  
+		elsif x = 42 then P0_RXD <= X"00";          
+		elsif x = 43 then P0_RXD <= X"00";          
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 45 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"00";          
+		elsif x = 43 then P0_RXD <= X"00";          
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 45 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"00";          
+		elsif x = 43 then P0_RXD <= X"00";          
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 45 then P0_RXD <= X"00";          
+		elsif x = 42 then P0_RXD <= X"00";          
+		elsif x = 43 then P0_RXD <= X"00";          
+		elsif x = 44 then P0_RXD <= X"00";          
+		elsif x = 45 then P0_RXD <= X"00";          

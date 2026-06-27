@@ -1,0 +1,702 @@
+
+   elsif y = 112 then       --Write 0x1B frame parameters 
+			if x <= 17 then							  
+				P0_RXDV <= '0';                     
+		P0_RXD <= X"00";                            
+		test_crc <= X"00";                          
+		elsif x > 17 and x <= 24 then				  
+			P0_RXDV <= '1';                         
+		P0_RXD <= X"55";                            
+		elsif x = 25 then P0_RXD <= X"D5";          
+		elsif x = 26 then P0_RXD <= X"11";          
+		elsif x = 27 then P0_RXD <= X"22";          
+		elsif x = 28 then P0_RXD <= X"33";          
+		elsif x = 29 then P0_RXD <= X"44";          
+		elsif x = 30 then P0_RXD <= X"55";          
+		elsif x = 31 then P0_RXD <= X"66";          
+		elsif x = 32 then P0_RXD <= X"11";          
+		elsif x = 33 then P0_RXD <= X"22";          
+		elsif x = 34 then P0_RXD <= X"33";          
+		elsif x = 35 then P0_RXD <= X"44";          
+		elsif x = 36 then P0_RXD <= X"55";          
+		elsif x = 37 then P0_RXD <= X"66";		  
+		elsif x = 38 then P0_RXD <= X"1B";     --1B Represents eeprom parameters	
+		elsif x = 39 then P0_RXD <= X"00";     --serial number		
+		elsif x = 40 then P0_RXD <= X"00";					
+		elsif x = 41 then P0_RXD <= X"00";	--Target card number	
+		elsif x = 42 then P0_RXD <= X"00";					
+		elsif x = 43 then P0_RXD <= X"00";	--Subcommand		
+		elsif x = 44  then P0_RXD <= X"00";
+		elsif x = 45  then P0_RXD <= X"00";
+		elsif x = 46  then P0_RXD <= X"00";
+		elsif x = 47  then P0_RXD <= X"41";
+		elsif x = 48  then P0_RXD <= X"00";
+		elsif x = 49  then P0_RXD <= X"00";
+		elsif x = 50  then P0_RXD <= X"00";
+		elsif x = 51  then P0_RXD <= X"05";
+		elsif x = 52  then P0_RXD <= X"00";
+		elsif x = 53  then P0_RXD <= X"00";
+		elsif x = 54  then P0_RXD <= X"FF";
+		elsif x = 55  then P0_RXD <= X"FF";
+		elsif x = 56  then P0_RXD <= X"FF";
+    else
+       P0_RXDV <= '0';
+end if; 
+
+   elsif y = 113 then       --Write 0x1B frame parameters 
+			if x <= 17 then							  
+				P0_RXDV <= '0';                     
+		P0_RXD <= X"00";                            
+		test_crc <= X"00";                          
+		elsif x > 17 and x <= 24 then				  
+			P0_RXDV <= '1';                         
+		P0_RXD <= X"55";                            
+		elsif x = 25 then P0_RXD <= X"D5";          
+		elsif x = 26 then P0_RXD <= X"11";          
+		elsif x = 27 then P0_RXD <= X"22";          
+		elsif x = 28 then P0_RXD <= X"33";          
+		elsif x = 29 then P0_RXD <= X"44";          
+		elsif x = 30 then P0_RXD <= X"55";          
+		elsif x = 31 then P0_RXD <= X"66";          
+		elsif x = 32 then P0_RXD <= X"11";          
+		elsif x = 33 then P0_RXD <= X"22";          
+		elsif x = 34 then P0_RXD <= X"33";          
+		elsif x = 35 then P0_RXD <= X"44";          
+		elsif x = 36 then P0_RXD <= X"55";          
+		elsif x = 37 then P0_RXD <= X"66";		  
+		elsif x = 38 then P0_RXD <= X"1B";     --1B Represents eeprom parameters	
+		elsif x = 39 then P0_RXD <= X"00";     --serial number		
+		elsif x = 40 then P0_RXD <= X"00";					
+		elsif x = 41 then P0_RXD <= X"00";	--Target card number	
+		elsif x = 42 then P0_RXD <= X"00";					
+		elsif x = 43 then P0_RXD <= X"00";	--Subcommand		
+		elsif x = 44  then P0_RXD <= X"00";
+		elsif x = 45  then P0_RXD <= X"00";
+		elsif x = 46  then P0_RXD <= X"00";
+		elsif x = 47  then P0_RXD <= X"4B";
+		elsif x = 48  then P0_RXD <= X"00";
+		elsif x = 49  then P0_RXD <= X"00";
+		elsif x = 50  then P0_RXD <= X"00";
+		elsif x = 51  then P0_RXD <= X"01";
+		elsif x = 52  then P0_RXD <= X"00";
+    else
+       P0_RXDV <= '0';
+end if; 
+
+   elsif y = 114 then       --Write 0x1B frame parameters 
+			if x <= 17 then							  
+				P0_RXDV <= '0';                     
+		P0_RXD <= X"00";                            
+		test_crc <= X"00";                          
+		elsif x > 17 and x <= 24 then				  
+			P0_RXDV <= '1';                         
+		P0_RXD <= X"55";                            
+		elsif x = 25 then P0_RXD <= X"D5";          
+		elsif x = 26 then P0_RXD <= X"11";          
+		elsif x = 27 then P0_RXD <= X"22";          
+		elsif x = 28 then P0_RXD <= X"33";          
+		elsif x = 29 then P0_RXD <= X"44";          
+		elsif x = 30 then P0_RXD <= X"55";          
+		elsif x = 31 then P0_RXD <= X"66";          
+		elsif x = 32 then P0_RXD <= X"11";          
+		elsif x = 33 then P0_RXD <= X"22";          
+		elsif x = 34 then P0_RXD <= X"33";          
+		elsif x = 35 then P0_RXD <= X"44";          
+		elsif x = 36 then P0_RXD <= X"55";          
+		elsif x = 37 then P0_RXD <= X"66";		  
+		elsif x = 38 then P0_RXD <= X"1B";     --1B Represents eeprom parameters	
+		elsif x = 39 then P0_RXD <= X"00";     --serial number		
+		elsif x = 40 then P0_RXD <= X"00";					
+		elsif x = 41 then P0_RXD <= X"00";	--Target card number	
+		elsif x = 42 then P0_RXD <= X"00";					
+		elsif x = 43 then P0_RXD <= X"00";	--Subcommand		
+		elsif x = 44  then P0_RXD <= X"00";
+		elsif x = 45  then P0_RXD <= X"00";
+		elsif x = 46  then P0_RXD <= X"00";
+		elsif x = 47  then P0_RXD <= X"4D";
+		elsif x = 48  then P0_RXD <= X"00";
+		elsif x = 49  then P0_RXD <= X"00";
+		elsif x = 50  then P0_RXD <= X"00";
+		elsif x = 51  then P0_RXD <= X"04";
+		elsif x = 52  then P0_RXD <= X"28";
+		elsif x = 53  then P0_RXD <= X"00";
+		elsif x = 54  then P0_RXD <= X"00";
+		elsif x = 55  then P0_RXD <= X"00";
+    else
+       P0_RXDV <= '0';
+end if; 
+
+   elsif y = 115 then       --Write 0x1B frame parameters 
+			if x <= 17 then							  
+				P0_RXDV <= '0';                     
+		P0_RXD <= X"00";                            
+		test_crc <= X"00";                          
+		elsif x > 17 and x <= 24 then				  
+			P0_RXDV <= '1';                         
+		P0_RXD <= X"55";                            
+		elsif x = 25 then P0_RXD <= X"D5";          
+		elsif x = 26 then P0_RXD <= X"11";          
+		elsif x = 27 then P0_RXD <= X"22";          
+		elsif x = 28 then P0_RXD <= X"33";          
+		elsif x = 29 then P0_RXD <= X"44";          
+		elsif x = 30 then P0_RXD <= X"55";          
+		elsif x = 31 then P0_RXD <= X"66";          
+		elsif x = 32 then P0_RXD <= X"11";          
+		elsif x = 33 then P0_RXD <= X"22";          
+		elsif x = 34 then P0_RXD <= X"33";          
+		elsif x = 35 then P0_RXD <= X"44";          
+		elsif x = 36 then P0_RXD <= X"55";          
+		elsif x = 37 then P0_RXD <= X"66";		  
+		elsif x = 38 then P0_RXD <= X"1B";     --1B Represents eeprom parameters	
+		elsif x = 39 then P0_RXD <= X"00";     --serial number		
+		elsif x = 40 then P0_RXD <= X"00";					
+		elsif x = 41 then P0_RXD <= X"00";	--Target card number	
+		elsif x = 42 then P0_RXD <= X"00";					
+		elsif x = 43 then P0_RXD <= X"00";	--Subcommand		
+		elsif x = 44  then P0_RXD <= X"00";
+		elsif x = 45  then P0_RXD <= X"00";
+		elsif x = 46  then P0_RXD <= X"00";
+		elsif x = 47  then P0_RXD <= X"51";
+		elsif x = 48  then P0_RXD <= X"00";
+		elsif x = 49  then P0_RXD <= X"00";
+		elsif x = 50  then P0_RXD <= X"00";
+		elsif x = 51  then P0_RXD <= X"04";
+		elsif x = 52  then P0_RXD <= X"02";
+		elsif x = 53  then P0_RXD <= X"00";
+		elsif x = 54  then P0_RXD <= X"00";
+		elsif x = 55  then P0_RXD <= X"80";
+    else
+       P0_RXDV <= '0';
+end if; 
+
+   elsif y = 116 then       --Write 0x1B frame parameters 
+			if x <= 17 then							  
+				P0_RXDV <= '0';                     
+		P0_RXD <= X"00";                            
+		test_crc <= X"00";                          
+		elsif x > 17 and x <= 24 then				  
+			P0_RXDV <= '1';                         
+		P0_RXD <= X"55";                            
+		elsif x = 25 then P0_RXD <= X"D5";          
+		elsif x = 26 then P0_RXD <= X"11";          
+		elsif x = 27 then P0_RXD <= X"22";          
+		elsif x = 28 then P0_RXD <= X"33";          
+		elsif x = 29 then P0_RXD <= X"44";          
+		elsif x = 30 then P0_RXD <= X"55";          
+		elsif x = 31 then P0_RXD <= X"66";          
+		elsif x = 32 then P0_RXD <= X"11";          
+		elsif x = 33 then P0_RXD <= X"22";          
+		elsif x = 34 then P0_RXD <= X"33";          
+		elsif x = 35 then P0_RXD <= X"44";          
+		elsif x = 36 then P0_RXD <= X"55";          
+		elsif x = 37 then P0_RXD <= X"66";		  
+		elsif x = 38 then P0_RXD <= X"1B";     --1B Represents eeprom parameters	
+		elsif x = 39 then P0_RXD <= X"00";     --serial number		
+		elsif x = 40 then P0_RXD <= X"00";					
+		elsif x = 41 then P0_RXD <= X"00";	--Target card number	
+		elsif x = 42 then P0_RXD <= X"00";					
+		elsif x = 43 then P0_RXD <= X"00";	--Subcommand		
+		elsif x = 44  then P0_RXD <= X"00";
+		elsif x = 45  then P0_RXD <= X"00";
+		elsif x = 46  then P0_RXD <= X"00";
+		elsif x = 47  then P0_RXD <= X"55";
+		elsif x = 48  then P0_RXD <= X"00";
+		elsif x = 49  then P0_RXD <= X"00";
+		elsif x = 50  then P0_RXD <= X"00";
+		elsif x = 51  then P0_RXD <= X"05";
+		elsif x = 52  then P0_RXD <= X"00";
+		elsif x = 53  then P0_RXD <= X"00";
+		elsif x = 54  then P0_RXD <= X"00";
+		elsif x = 55  then P0_RXD <= X"00";
+		elsif x = 56  then P0_RXD <= X"00";
+    else
+       P0_RXDV <= '0';
+end if; 
+
+   elsif y = 117 then       --Write 0x1B frame parameters 
+			if x <= 17 then							  
+				P0_RXDV <= '0';                     
+		P0_RXD <= X"00";                            
+		test_crc <= X"00";                          
+		elsif x > 17 and x <= 24 then				  
+			P0_RXDV <= '1';                         
+		P0_RXD <= X"55";                            
+		elsif x = 25 then P0_RXD <= X"D5";          
+		elsif x = 26 then P0_RXD <= X"11";          
+		elsif x = 27 then P0_RXD <= X"22";          
+		elsif x = 28 then P0_RXD <= X"33";          
+		elsif x = 29 then P0_RXD <= X"44";          
+		elsif x = 30 then P0_RXD <= X"55";          
+		elsif x = 31 then P0_RXD <= X"66";          
+		elsif x = 32 then P0_RXD <= X"11";          
+		elsif x = 33 then P0_RXD <= X"22";          
+		elsif x = 34 then P0_RXD <= X"33";          
+		elsif x = 35 then P0_RXD <= X"44";          
+		elsif x = 36 then P0_RXD <= X"55";          
+		elsif x = 37 then P0_RXD <= X"66";		  
+		elsif x = 38 then P0_RXD <= X"1B";     --1B Represents eeprom parameters	
+		elsif x = 39 then P0_RXD <= X"00";     --serial number		
+		elsif x = 40 then P0_RXD <= X"00";					
+		elsif x = 41 then P0_RXD <= X"00";	--Target card number	
+		elsif x = 42 then P0_RXD <= X"00";					
+		elsif x = 43 then P0_RXD <= X"00";	--Subcommand		
+		elsif x = 44  then P0_RXD <= X"00";
+		elsif x = 45  then P0_RXD <= X"00";
+		elsif x = 46  then P0_RXD <= X"00";
+		elsif x = 47  then P0_RXD <= X"6F";
+		elsif x = 48  then P0_RXD <= X"00";
+		elsif x = 49  then P0_RXD <= X"00";
+		elsif x = 50  then P0_RXD <= X"00";
+		elsif x = 51  then P0_RXD <= X"01";
+		elsif x = 52  then P0_RXD <= X"00";
+    else
+       P0_RXDV <= '0';
+end if; 
+
+   elsif y = 118 then       --Write 0x1B frame parameters 
+			if x <= 17 then							  
+				P0_RXDV <= '0';                     
+		P0_RXD <= X"00";                            
+		test_crc <= X"00";                          
+		elsif x > 17 and x <= 24 then				  
+			P0_RXDV <= '1';                         
+		P0_RXD <= X"55";                            
+		elsif x = 25 then P0_RXD <= X"D5";          
+		elsif x = 26 then P0_RXD <= X"11";          
+		elsif x = 27 then P0_RXD <= X"22";          
+		elsif x = 28 then P0_RXD <= X"33";          
+		elsif x = 29 then P0_RXD <= X"44";          
+		elsif x = 30 then P0_RXD <= X"55";          
+		elsif x = 31 then P0_RXD <= X"66";          
+		elsif x = 32 then P0_RXD <= X"11";          
+		elsif x = 33 then P0_RXD <= X"22";          
+		elsif x = 34 then P0_RXD <= X"33";          
+		elsif x = 35 then P0_RXD <= X"44";          
+		elsif x = 36 then P0_RXD <= X"55";          
+		elsif x = 37 then P0_RXD <= X"66";		  
+		elsif x = 38 then P0_RXD <= X"1B";     --1B Represents eeprom parameters	
+		elsif x = 39 then P0_RXD <= X"00";     --serial number		
+		elsif x = 40 then P0_RXD <= X"00";					
+		elsif x = 41 then P0_RXD <= X"00";	--Target card number	
+		elsif x = 42 then P0_RXD <= X"00";					
+		elsif x = 43 then P0_RXD <= X"00";	--Subcommand		
+		elsif x = 44  then P0_RXD <= X"00";
+		elsif x = 45  then P0_RXD <= X"00";
+		elsif x = 46  then P0_RXD <= X"00";
+		elsif x = 47  then P0_RXD <= X"71";
+		elsif x = 48  then P0_RXD <= X"00";
+		elsif x = 49  then P0_RXD <= X"00";
+		elsif x = 50  then P0_RXD <= X"00";
+		elsif x = 51  then P0_RXD <= X"01";
+		elsif x = 52  then P0_RXD <= X"00";
+    else
+       P0_RXDV <= '0';
+end if; 
+
+   elsif y = 119 then       --Write 0x1B frame parameters 
+			if x <= 17 then							  
+				P0_RXDV <= '0';                     
+		P0_RXD <= X"00";                            
+		test_crc <= X"00";                          
+		elsif x > 17 and x <= 24 then				  
+			P0_RXDV <= '1';                         
+		P0_RXD <= X"55";                            
+		elsif x = 25 then P0_RXD <= X"D5";          
+		elsif x = 26 then P0_RXD <= X"11";          
+		elsif x = 27 then P0_RXD <= X"22";          
+		elsif x = 28 then P0_RXD <= X"33";          
+		elsif x = 29 then P0_RXD <= X"44";          
+		elsif x = 30 then P0_RXD <= X"55";          
+		elsif x = 31 then P0_RXD <= X"66";          
+		elsif x = 32 then P0_RXD <= X"11";          
+		elsif x = 33 then P0_RXD <= X"22";          
+		elsif x = 34 then P0_RXD <= X"33";          
+		elsif x = 35 then P0_RXD <= X"44";          
+		elsif x = 36 then P0_RXD <= X"55";          
+		elsif x = 37 then P0_RXD <= X"66";		  
+		elsif x = 38 then P0_RXD <= X"1B";     --1B Represents eeprom parameters	
+		elsif x = 39 then P0_RXD <= X"00";     --serial number		
+		elsif x = 40 then P0_RXD <= X"00";					
+		elsif x = 41 then P0_RXD <= X"00";	--Target card number	
+		elsif x = 42 then P0_RXD <= X"00";					
+		elsif x = 43 then P0_RXD <= X"00";	--Subcommand		
+		elsif x = 44  then P0_RXD <= X"00";
+		elsif x = 45  then P0_RXD <= X"00";
+		elsif x = 46  then P0_RXD <= X"00";
+		elsif x = 47  then P0_RXD <= X"7C";
+		elsif x = 48  then P0_RXD <= X"00";
+		elsif x = 49  then P0_RXD <= X"00";
+		elsif x = 50  then P0_RXD <= X"00";
+		elsif x = 51  then P0_RXD <= X"01";
+		elsif x = 52  then P0_RXD <= X"00";
+    else
+       P0_RXDV <= '0';
+end if; 
+
+   elsif y = 120 then       --Write 0x1B frame parameters 
+			if x <= 17 then							  
+				P0_RXDV <= '0';                     
+		P0_RXD <= X"00";                            
+		test_crc <= X"00";                          
+		elsif x > 17 and x <= 24 then				  
+			P0_RXDV <= '1';                         
+		P0_RXD <= X"55";                            
+		elsif x = 25 then P0_RXD <= X"D5";          
+		elsif x = 26 then P0_RXD <= X"11";          
+		elsif x = 27 then P0_RXD <= X"22";          
+		elsif x = 28 then P0_RXD <= X"33";          
+		elsif x = 29 then P0_RXD <= X"44";          
+		elsif x = 30 then P0_RXD <= X"55";          
+		elsif x = 31 then P0_RXD <= X"66";          
+		elsif x = 32 then P0_RXD <= X"11";          
+		elsif x = 33 then P0_RXD <= X"22";          
+		elsif x = 34 then P0_RXD <= X"33";          
+		elsif x = 35 then P0_RXD <= X"44";          
+		elsif x = 36 then P0_RXD <= X"55";          
+		elsif x = 37 then P0_RXD <= X"66";		  
+		elsif x = 38 then P0_RXD <= X"1B";     --1B Represents eeprom parameters	
+		elsif x = 39 then P0_RXD <= X"00";     --serial number		
+		elsif x = 40 then P0_RXD <= X"00";					
+		elsif x = 41 then P0_RXD <= X"00";	--Target card number	
+		elsif x = 42 then P0_RXD <= X"00";					
+		elsif x = 43 then P0_RXD <= X"00";	--Subcommand		
+		elsif x = 44  then P0_RXD <= X"00";
+		elsif x = 45  then P0_RXD <= X"00";
+		elsif x = 46  then P0_RXD <= X"00";
+		elsif x = 47  then P0_RXD <= X"7D";
+		elsif x = 48  then P0_RXD <= X"00";
+		elsif x = 49  then P0_RXD <= X"00";
+		elsif x = 50  then P0_RXD <= X"00";
+		elsif x = 51  then P0_RXD <= X"01";
+		elsif x = 52  then P0_RXD <= X"00";
+    else
+       P0_RXDV <= '0';
+end if; 
+
+   elsif y = 121 then       --Write 0x1B frame parameters 
+			if x <= 17 then							  
+				P0_RXDV <= '0';                     
+		P0_RXD <= X"00";                            
+		test_crc <= X"00";                          
+		elsif x > 17 and x <= 24 then				  
+			P0_RXDV <= '1';                         
+		P0_RXD <= X"55";                            
+		elsif x = 25 then P0_RXD <= X"D5";          
+		elsif x = 26 then P0_RXD <= X"11";          
+		elsif x = 27 then P0_RXD <= X"22";          
+		elsif x = 28 then P0_RXD <= X"33";          
+		elsif x = 29 then P0_RXD <= X"44";          
+		elsif x = 30 then P0_RXD <= X"55";          
+		elsif x = 31 then P0_RXD <= X"66";          
+		elsif x = 32 then P0_RXD <= X"11";          
+		elsif x = 33 then P0_RXD <= X"22";          
+		elsif x = 34 then P0_RXD <= X"33";          
+		elsif x = 35 then P0_RXD <= X"44";          
+		elsif x = 36 then P0_RXD <= X"55";          
+		elsif x = 37 then P0_RXD <= X"66";		  
+		elsif x = 38 then P0_RXD <= X"1B";     --1B Represents eeprom parameters	
+		elsif x = 39 then P0_RXD <= X"00";     --serial number		
+		elsif x = 40 then P0_RXD <= X"00";					
+		elsif x = 41 then P0_RXD <= X"00";	--Target card number	
+		elsif x = 42 then P0_RXD <= X"00";					
+		elsif x = 43 then P0_RXD <= X"00";	--Subcommand		
+		elsif x = 44  then P0_RXD <= X"00";
+		elsif x = 45  then P0_RXD <= X"00";
+		elsif x = 46  then P0_RXD <= X"00";
+		elsif x = 47  then P0_RXD <= X"7E";
+		elsif x = 48  then P0_RXD <= X"00";
+		elsif x = 49  then P0_RXD <= X"00";
+		elsif x = 50  then P0_RXD <= X"00";
+		elsif x = 51  then P0_RXD <= X"03";
+		elsif x = 52  then P0_RXD <= X"00";
+		elsif x = 53  then P0_RXD <= X"74";
+		elsif x = 54  then P0_RXD <= X"03";
+    else
+       P0_RXDV <= '0';
+end if; 
+
+   elsif y = 122 then       --Write 0x1B frame parameters 
+			if x <= 17 then							  
+				P0_RXDV <= '0';                     
+		P0_RXD <= X"00";                            
+		test_crc <= X"00";                          
+		elsif x > 17 and x <= 24 then				  
+			P0_RXDV <= '1';                         
+		P0_RXD <= X"55";                            
+		elsif x = 25 then P0_RXD <= X"D5";          
+		elsif x = 26 then P0_RXD <= X"11";          
+		elsif x = 27 then P0_RXD <= X"22";          
+		elsif x = 28 then P0_RXD <= X"33";          
+		elsif x = 29 then P0_RXD <= X"44";          
+		elsif x = 30 then P0_RXD <= X"55";          
+		elsif x = 31 then P0_RXD <= X"66";          
+		elsif x = 32 then P0_RXD <= X"11";          
+		elsif x = 33 then P0_RXD <= X"22";          
+		elsif x = 34 then P0_RXD <= X"33";          
+		elsif x = 35 then P0_RXD <= X"44";          
+		elsif x = 36 then P0_RXD <= X"55";          
+		elsif x = 37 then P0_RXD <= X"66";		  
+		elsif x = 38 then P0_RXD <= X"1B";     --1B Represents eeprom parameters	
+		elsif x = 39 then P0_RXD <= X"00";     --serial number		
+		elsif x = 40 then P0_RXD <= X"00";					
+		elsif x = 41 then P0_RXD <= X"00";	--Target card number	
+		elsif x = 42 then P0_RXD <= X"00";					
+		elsif x = 43 then P0_RXD <= X"00";	--Subcommand		
+		elsif x = 44  then P0_RXD <= X"00";
+		elsif x = 45  then P0_RXD <= X"00";
+		elsif x = 46  then P0_RXD <= X"00";
+		elsif x = 47  then P0_RXD <= X"B2";
+		elsif x = 48  then P0_RXD <= X"00";
+		elsif x = 49  then P0_RXD <= X"00";
+		elsif x = 50  then P0_RXD <= X"00";
+		elsif x = 51  then P0_RXD <= X"01";
+		elsif x = 52  then P0_RXD <= X"00";
+    else
+       P0_RXDV <= '0';
+end if; 
+
+   elsif y = 123 then       --Write 0x1B frame parameters 
+			if x <= 17 then							  
+				P0_RXDV <= '0';                     
+		P0_RXD <= X"00";                            
+		test_crc <= X"00";                          
+		elsif x > 17 and x <= 24 then				  
+			P0_RXDV <= '1';                         
+		P0_RXD <= X"55";                            
+		elsif x = 25 then P0_RXD <= X"D5";          
+		elsif x = 26 then P0_RXD <= X"11";          
+		elsif x = 27 then P0_RXD <= X"22";          
+		elsif x = 28 then P0_RXD <= X"33";          
+		elsif x = 29 then P0_RXD <= X"44";          
+		elsif x = 30 then P0_RXD <= X"55";          
+		elsif x = 31 then P0_RXD <= X"66";          
+		elsif x = 32 then P0_RXD <= X"11";          
+		elsif x = 33 then P0_RXD <= X"22";          
+		elsif x = 34 then P0_RXD <= X"33";          
+		elsif x = 35 then P0_RXD <= X"44";          
+		elsif x = 36 then P0_RXD <= X"55";          
+		elsif x = 37 then P0_RXD <= X"66";		  
+		elsif x = 38 then P0_RXD <= X"1B";     --1B Represents eeprom parameters	
+		elsif x = 39 then P0_RXD <= X"00";     --serial number		
+		elsif x = 40 then P0_RXD <= X"00";					
+		elsif x = 41 then P0_RXD <= X"00";	--Target card number	
+		elsif x = 42 then P0_RXD <= X"00";					
+		elsif x = 43 then P0_RXD <= X"00";	--Subcommand		
+		elsif x = 44  then P0_RXD <= X"00";
+		elsif x = 45  then P0_RXD <= X"00";
+		elsif x = 46  then P0_RXD <= X"00";
+		elsif x = 47  then P0_RXD <= X"B3";
+		elsif x = 48  then P0_RXD <= X"00";
+		elsif x = 49  then P0_RXD <= X"00";
+		elsif x = 50  then P0_RXD <= X"00";
+		elsif x = 51  then P0_RXD <= X"04";
+		elsif x = 52  then P0_RXD <= X"00";
+		elsif x = 53  then P0_RXD <= X"00";
+		elsif x = 54  then P0_RXD <= X"00";
+		elsif x = 55  then P0_RXD <= X"00";
+    else
+       P0_RXDV <= '0';
+end if; 
+
+   elsif y = 124 then       --Write 0x1B frame parameters 
+			if x <= 17 then							  
+				P0_RXDV <= '0';                     
+		P0_RXD <= X"00";                            
+		test_crc <= X"00";                          
+		elsif x > 17 and x <= 24 then				  
+			P0_RXDV <= '1';                         
+		P0_RXD <= X"55";                            
+		elsif x = 25 then P0_RXD <= X"D5";          
+		elsif x = 26 then P0_RXD <= X"11";          
+		elsif x = 27 then P0_RXD <= X"22";          
+		elsif x = 28 then P0_RXD <= X"33";          
+		elsif x = 29 then P0_RXD <= X"44";          
+		elsif x = 30 then P0_RXD <= X"55";          
+		elsif x = 31 then P0_RXD <= X"66";          
+		elsif x = 32 then P0_RXD <= X"11";          
+		elsif x = 33 then P0_RXD <= X"22";          
+		elsif x = 34 then P0_RXD <= X"33";          
+		elsif x = 35 then P0_RXD <= X"44";          
+		elsif x = 36 then P0_RXD <= X"55";          
+		elsif x = 37 then P0_RXD <= X"66";		  
+		elsif x = 38 then P0_RXD <= X"1B";     --1B Represents eeprom parameters	
+		elsif x = 39 then P0_RXD <= X"00";     --serial number		
+		elsif x = 40 then P0_RXD <= X"00";					
+		elsif x = 41 then P0_RXD <= X"00";	--Target card number	
+		elsif x = 42 then P0_RXD <= X"00";					
+		elsif x = 43 then P0_RXD <= X"00";	--Subcommand		
+		elsif x = 44  then P0_RXD <= X"00";
+		elsif x = 45  then P0_RXD <= X"00";
+		elsif x = 46  then P0_RXD <= X"00";
+		elsif x = 47  then P0_RXD <= X"CE";
+		elsif x = 48  then P0_RXD <= X"00";
+		elsif x = 49  then P0_RXD <= X"00";
+		elsif x = 50  then P0_RXD <= X"00";
+		elsif x = 51  then P0_RXD <= X"10";
+		elsif x = 52  then P0_RXD <= X"74";
+		elsif x = 53  then P0_RXD <= X"03";
+		elsif x = 54  then P0_RXD <= X"74";
+		elsif x = 55  then P0_RXD <= X"03";
+		elsif x = 56  then P0_RXD <= X"10";
+		elsif x = 57  then P0_RXD <= X"E8";
+		elsif x = 58  then P0_RXD <= X"10";
+		elsif x = 59  then P0_RXD <= X"E8";
+		elsif x = 60  then P0_RXD <= X"10";
+		elsif x = 61  then P0_RXD <= X"E8";
+		elsif x = 62  then P0_RXD <= X"00";
+		elsif x = 63  then P0_RXD <= X"02";
+		elsif x = 64  then P0_RXD <= X"00";
+		elsif x = 65  then P0_RXD <= X"02";
+		elsif x = 66  then P0_RXD <= X"00";
+		elsif x = 67  then P0_RXD <= X"02";
+    else
+       P0_RXDV <= '0';
+end if; 
+
+   elsif y = 125 then       --Write 0x1B frame parameters 
+			if x <= 17 then							  
+				P0_RXDV <= '0';                     
+		P0_RXD <= X"00";                            
+		test_crc <= X"00";                          
+		elsif x > 17 and x <= 24 then				  
+			P0_RXDV <= '1';                         
+		P0_RXD <= X"55";                            
+		elsif x = 25 then P0_RXD <= X"D5";          
+		elsif x = 26 then P0_RXD <= X"11";          
+		elsif x = 27 then P0_RXD <= X"22";          
+		elsif x = 28 then P0_RXD <= X"33";          
+		elsif x = 29 then P0_RXD <= X"44";          
+		elsif x = 30 then P0_RXD <= X"55";          
+		elsif x = 31 then P0_RXD <= X"66";          
+		elsif x = 32 then P0_RXD <= X"11";          
+		elsif x = 33 then P0_RXD <= X"22";          
+		elsif x = 34 then P0_RXD <= X"33";          
+		elsif x = 35 then P0_RXD <= X"44";          
+		elsif x = 36 then P0_RXD <= X"55";          
+		elsif x = 37 then P0_RXD <= X"66";		  
+		elsif x = 38 then P0_RXD <= X"1B";     --1B Represents eeprom parameters	
+		elsif x = 39 then P0_RXD <= X"00";     --serial number		
+		elsif x = 40 then P0_RXD <= X"00";					
+		elsif x = 41 then P0_RXD <= X"00";	--Target card number	
+		elsif x = 42 then P0_RXD <= X"00";					
+		elsif x = 43 then P0_RXD <= X"00";	--Subcommand		
+		elsif x = 44  then P0_RXD <= X"00";
+		elsif x = 45  then P0_RXD <= X"00";
+		elsif x = 46  then P0_RXD <= X"00";
+		elsif x = 47  then P0_RXD <= X"DE";
+		elsif x = 48  then P0_RXD <= X"00";
+		elsif x = 49  then P0_RXD <= X"00";
+		elsif x = 50  then P0_RXD <= X"00";
+		elsif x = 51  then P0_RXD <= X"02";
+		elsif x = 52  then P0_RXD <= X"01";
+		elsif x = 53  then P0_RXD <= X"00";
+    else
+       P0_RXDV <= '0';
+end if; 
+
+   elsif y = 126 then       --Write 0x1B frame parameters 
+			if x <= 17 then							  
+				P0_RXDV <= '0';                     
+		P0_RXD <= X"00";                            
+		test_crc <= X"00";                          
+		elsif x > 17 and x <= 24 then				  
+			P0_RXDV <= '1';                         
+		P0_RXD <= X"55";                            
+		elsif x = 25 then P0_RXD <= X"D5";          
+		elsif x = 26 then P0_RXD <= X"11";          
+		elsif x = 27 then P0_RXD <= X"22";          
+		elsif x = 28 then P0_RXD <= X"33";          
+		elsif x = 29 then P0_RXD <= X"44";          
+		elsif x = 30 then P0_RXD <= X"55";          
+		elsif x = 31 then P0_RXD <= X"66";          
+		elsif x = 32 then P0_RXD <= X"11";          
+		elsif x = 33 then P0_RXD <= X"22";          
+		elsif x = 34 then P0_RXD <= X"33";          
+		elsif x = 35 then P0_RXD <= X"44";          
+		elsif x = 36 then P0_RXD <= X"55";          
+		elsif x = 37 then P0_RXD <= X"66";		  
+		elsif x = 38 then P0_RXD <= X"1B";     --1B Represents eeprom parameters	
+		elsif x = 39 then P0_RXD <= X"00";     --serial number		
+		elsif x = 40 then P0_RXD <= X"00";					
+		elsif x = 41 then P0_RXD <= X"00";	--Target card number	
+		elsif x = 42 then P0_RXD <= X"00";					
+		elsif x = 43 then P0_RXD <= X"00";	--Subcommand		
+		elsif x = 44  then P0_RXD <= X"00";
+		elsif x = 45  then P0_RXD <= X"00";
+		elsif x = 46  then P0_RXD <= X"00";
+		elsif x = 47  then P0_RXD <= X"E0";
+		elsif x = 48  then P0_RXD <= X"00";
+		elsif x = 49  then P0_RXD <= X"00";
+		elsif x = 50  then P0_RXD <= X"00";
+		elsif x = 51  then P0_RXD <= X"01";
+		elsif x = 52  then P0_RXD <= X"00";
+    else
+       P0_RXDV <= '0';
+end if; 
+
+   elsif y = 127 then       --Write 0x1B frame parameters 
+			if x <= 17 then							  
+				P0_RXDV <= '0';                     
+		P0_RXD <= X"00";                            
+		test_crc <= X"00";                          
+		elsif x > 17 and x <= 24 then				  
+			P0_RXDV <= '1';                         
+		P0_RXD <= X"55";                            
+		elsif x = 25 then P0_RXD <= X"D5";          
+		elsif x = 26 then P0_RXD <= X"11";          
+		elsif x = 27 then P0_RXD <= X"22";          
+		elsif x = 28 then P0_RXD <= X"33";          
+		elsif x = 29 then P0_RXD <= X"44";          
+		elsif x = 30 then P0_RXD <= X"55";          
+		elsif x = 31 then P0_RXD <= X"66";          
+		elsif x = 32 then P0_RXD <= X"11";          
+		elsif x = 33 then P0_RXD <= X"22";          
+		elsif x = 34 then P0_RXD <= X"33";          
+		elsif x = 35 then P0_RXD <= X"44";          
+		elsif x = 36 then P0_RXD <= X"55";          
+		elsif x = 37 then P0_RXD <= X"66";		  
+		elsif x = 38 then P0_RXD <= X"1B";     --1B Represents eeprom parameters	
+		elsif x = 39 then P0_RXD <= X"00";     --serial number		
+		elsif x = 40 then P0_RXD <= X"00";					
+		elsif x = 41 then P0_RXD <= X"00";	--Target card number	
+		elsif x = 42 then P0_RXD <= X"00";					
+		elsif x = 43 then P0_RXD <= X"00";	--Subcommand		
+		elsif x = 44  then P0_RXD <= X"00";
+		elsif x = 45  then P0_RXD <= X"00";
+		elsif x = 46  then P0_RXD <= X"00";
+		elsif x = 47  then P0_RXD <= X"E2";
+		elsif x = 48  then P0_RXD <= X"00";
+		elsif x = 49  then P0_RXD <= X"00";
+		elsif x = 50  then P0_RXD <= X"00";
+		elsif x = 51  then P0_RXD <= X"1C";
+		elsif x = 52  then P0_RXD <= X"00";
+		elsif x = 53  then P0_RXD <= X"00";
+		elsif x = 54  then P0_RXD <= X"00";
+		elsif x = 55  then P0_RXD <= X"00";
+		elsif x = 56  then P0_RXD <= X"00";
+		elsif x = 57  then P0_RXD <= X"00";
+		elsif x = 58  then P0_RXD <= X"FF";
+		elsif x = 59  then P0_RXD <= X"FF";
+		elsif x = 60  then P0_RXD <= X"FF";
+		elsif x = 61  then P0_RXD <= X"00";
+		elsif x = 62  then P0_RXD <= X"00";
+		elsif x = 63  then P0_RXD <= X"00";
+		elsif x = 64  then P0_RXD <= X"00";
+		elsif x = 65  then P0_RXD <= X"00";
+		elsif x = 66  then P0_RXD <= X"00";
+		elsif x = 67  then P0_RXD <= X"80";
+		elsif x = 68  then P0_RXD <= X"80";
+		elsif x = 69  then P0_RXD <= X"80";
+		elsif x = 70  then P0_RXD <= X"32";
+		elsif x = 71  then P0_RXD <= X"00";
+		elsif x = 72  then P0_RXD <= X"1F";
+		elsif x = 73  then P0_RXD <= X"00";
+		elsif x = 74  then P0_RXD <= X"00";
+		elsif x = 75  then P0_RXD <= X"00";
+		elsif x = 76  then P0_RXD <= X"00";
+		elsif x = 77  then P0_RXD <= X"00";
+		elsif x = 78  then P0_RXD <= X"00";
+		elsif x = 79  then P0_RXD <= X"07";
+    else
+       P0_RXDV <= '0';
+end if; 

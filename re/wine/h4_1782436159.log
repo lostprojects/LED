@@ -1,0 +1,23 @@
+=== h4 args: 1 1 ===
+nic=77c10000 dev=78bc0000
+idexist=77c11ba0 cscreen=77c11ec0 sstart=77c11d80 ddet=78ca3500 gc=78ca3710
+adapters=2
+  [0] id(name)='{00000003-0000-0000-0000-4E6574446576}'  desc='enp4s0'  type=0
+  [1] id(name)='{00000002-0000-0000-0000-4E6574446576}'  desc='enx9c69d388d76e'  type=0
+
+-- using idx1: id='{00000002-0000-0000-0000-4E6574446576}' desc='enx9c69d388d76e' type=0 --
+Nic_DetectIsInstallWinpCap = 0
+NetAdapterIDExist(id)   = 0xe0831206
+NetAdapterIDExist(desc) = 0xe0831206
+
+CreateScreen(1,64,64, 0, e4=1, e5=1)
+Nic_CreateScreen = 0x0
+Nic_GetScreenCount = 1
+Nic_SetSendParamScreenNumber(1) = 0x0
+Nic_SenderStart(1)  = 0xe0831204
+Nic_IsSenderRunning = 1
+
+CLTReceiverDefaultDetectAll(0,0)...
+DefaultDetectAll = 0xe0830040
+CLTReceiverGetCount = 0
+(wine rc=0)

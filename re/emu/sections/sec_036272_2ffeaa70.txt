@@ -1,0 +1,5 @@
+		elsif x = 39 then P0_RXD <= X"00";     --serial number		
+		elsif x = 40 then P0_RXD <= X"00";					
+		elsif x = 41 then P0_RXD <= X"00";					
+		elsif x > 41 and x <= 256 + 41 then P0_RXD <= X"00";	
+		elsif x > 256 + 41 then									

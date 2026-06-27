@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//usr/lib/**)",
+      "Bash(ip -br addr)",
+      "Bash(ifconfig -a)",
+      "Bash(ip -br link)",
+      "WebSearch",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}
