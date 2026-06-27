@@ -263,6 +263,25 @@ LED/
 
 ---
 
+## Setup / dependencies
+
+Python deps are declared in [`pyproject.toml`](pyproject.toml); the full list of
+third-party software (proprietary DLLs, vendored gateware, system toolchain) is in
+[`THIRD_PARTY.md`](THIRD_PARTY.md).
+
+```bash
+# Python packages for the RE harnesses (pefile, unicorn)
+pip install -e .            # or: pip install pefile unicorn
+
+# Proprietary Colorlight DLLs are NOT in this repo (git-ignored). To run the
+# re/emu/ harnesses, install LEDVISION and copy its DLLs into re/dll/:
+#   re/dll/CLTDevice.dll  re/dll/CLTNic.dll  re/dll/CommonClass.dll
+# See THIRD_PARTY.md §2.
+```
+
+System tools (Wine, radare2, and — for the Plan B gateware — yosys / nextpnr-ecp5 /
+openFPGALoader) install via your OS package manager; see `THIRD_PARTY.md` §4.
+
 ## How to run
 
 All raw-socket commands need root. `.env` holds `SUDO_PASS`; scripts are invoked
